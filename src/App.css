@@ -104,3 +104,29 @@ h2 {
   flex-wrap: wrap;
   gap: 2rem;
 }
+
+/* Tablet: max-width 1024px */
+@media (max-width: 1024px) {
+  /* Tablet styles here */
+  .card{
+    max-width: 40%;
+  }
+}
+
+/* Mobile: max-width 768px */
+@media (max-width: 768px) {
+  /* Mobile styles here */
+  .card{
+    max-width: 90%;
+  }
+  .filter-header {
+    flex-direction: column;
+  }
+  .filter-buttons {
+    display: block;
+    margin: 2rem auto;
+  }
+  .filter-buttons button{
+    margin: 0 .26rem;
+  }
+}

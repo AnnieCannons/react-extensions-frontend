@@ -11,7 +11,6 @@ function Card({
   clickHandler,
   id,
   updateItem,
-  
 }) {
   const [checked, setChecked] = useState(false);
 
@@ -30,8 +29,12 @@ function Card({
         </div>
       </div>
       <div className="button-wrapper">
-        <Button clickHandler={clickHandler}id={id} text="Remove"/>
-        <Toggle checked={checked} handleToggleChange={handleToggleChange} isActive={isActive}/>
+        <Button clickHandler={clickHandler} id={id} text="Remove" />
+        <Toggle
+          // checked={checked}
+          handleToggleChange={handleToggleChange}
+          isActive={isActive}
+        />
       </div>
     </div>
   );

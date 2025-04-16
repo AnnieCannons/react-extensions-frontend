@@ -2,11 +2,11 @@ import "../App.css";
 import Card from "../components/Card.jsx";
 import Button from "../components/Button.jsx";
 import data from "../data.js";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 function Home() {
   const [appData, setAppData] = useState(data);
-  const [filter, setFilter] = useState("all"); // 'all', 'active', or 'inactive'
+  const [filter, setFilter] = useState("all");
 
   function removeItem(id) {
     const updatedData = appData.filter((item) => item.id !== id);
@@ -29,12 +29,8 @@ function Home() {
     return true; // show all
   });
 
-  useEffect(() => {
-    console.log("Current app data:", appData);
-  }, [appData]);
-
+  
   return (
-    
   <div>
     <div className="filter-header">
       <h3>Extensions List</h3>

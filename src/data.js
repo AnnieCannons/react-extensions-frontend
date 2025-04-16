@@ -11,7 +11,7 @@ let data = [
 		logo: "./assets/logo-style-spy.svg",
 		name: "StyleSpy",
 		description: "Instantly analyze and copy CSS from any webpage element.",
-		isActive: false
+		isActive: true
 	},
 	{
 		id: 3,
@@ -25,14 +25,14 @@ let data = [
 		logo: "./assets/logo-json-wizard.svg",
 		name: "JSONWizard",
 		description: "Formats, validates, and prettifies JSON responses in-browser.",
-		isActive: false
+		isActive: true
 	},
 	{
 		id: 5,
 		logo: "./assets/logo-tab-master-pro.svg",
 		name: "TabMaster Pro",
 		description: "Organizes browser tabs into groups and sessions.",
-		isActive: false
+		isActive: true
 	},
 	{
 		id: 6,
